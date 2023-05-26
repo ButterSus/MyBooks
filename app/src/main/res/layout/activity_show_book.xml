@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowBookActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lineyka"
+            android:layout_margin="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/showStoryImageView"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleShowStory"
+                    android:layout_toEndOf="@id/showStoryImageView"
+                    android:textSize="20dp"
+                    android:text="Название"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showStoryGenre"
+                    android:text="Автор"
+                    android:textSize="20dp"
+                    android:layout_toEndOf="@id/showStoryImageView"
+                    android:layout_below="@id/titleShowStory"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showStoryAuthor"
+                    android:text="Жанр"
+                    android:textSize="20dp"
+                    android:layout_toEndOf="@id/showStoryImageView"
+                    android:layout_below="@id/showStoryGenre"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showStoryYear"
+                    android:text="Год"
+                    android:textSize="20dp"
+                    android:layout_toEndOf="@id/showStoryImageView"
+                    android:layout_below="@id/showStoryAuthor"
+                    android:layout_marginLeft="5dp"/>
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/textViewShowStory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
