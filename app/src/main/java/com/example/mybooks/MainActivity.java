@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements BookAdapter.OnIte
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                list.clear();
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     BookReceiver contentReceiver = dataSnapshot.getValue(BookReceiver.class);
                     list.add(contentReceiver);
